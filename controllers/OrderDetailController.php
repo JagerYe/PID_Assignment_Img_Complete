@@ -4,7 +4,7 @@ class OrderDetailController extends Controller
     private $_dao;
     public function __construct()
     {
-        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/models/orderDetail/OrderDetailService.php";
+        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/models/orderDetail/OrderDetailService.php";
         $this->_dao = (new OrderDetailService())->getDAO();
         $this->model("orderDetail");
     }

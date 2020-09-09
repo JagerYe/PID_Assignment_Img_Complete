@@ -8,10 +8,10 @@ class Api
         $url = rtrim($_GET["url"], "/");
         $url = explode("/", $url);
         $controllerName = "{$url[0]}Controller";
-        if (!file_exists("{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/controllers/$controllerName.php")) {
+        if (!file_exists("{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/controllers/$controllerName.php")) {
             return;
         }
-        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/controllers/$controllerName.php";
+        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/controllers/$controllerName.php";
         $controller = new $controllerName;
         $methodName = isset($url[1]) ? $url[1] : "";
         if (!method_exists($controller, $methodName)) {
@@ -33,7 +33,7 @@ class Api
 
         if (isset($_FILES['img'])) {
             // $filePaht = $_FILES['img']['tmp_name'];
-            // $fileNewPath = "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/img/{$_FILES['img']['name']}";
+            // $fileNewPath = "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/img/{$_FILES['img']['name']}";
             // move_uploaded_file($filePaht, $fileNewPath);
             $values[] = $_FILES['img']['tmp_name'];
         }

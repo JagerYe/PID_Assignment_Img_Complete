@@ -4,7 +4,7 @@ class EmployeeController extends Controller
     private $_dao;
     public function __construct()
     {
-        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/models/employee/EmployeeService.php";
+        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/models/employee/EmployeeService.php";
         $this->_dao = (new EmployeeService())->getDAO();
         $this->model("employee");
     }

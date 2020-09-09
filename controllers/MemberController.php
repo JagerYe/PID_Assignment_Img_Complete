@@ -4,8 +4,8 @@ class MemberController extends Controller
     private $_dao;
     public function __construct()
     {
-        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/controllers/EmployeeController.php";
-        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/models/member/MemberService.php";
+        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/controllers/EmployeeController.php";
+        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/models/member/MemberService.php";
         $this->_dao = (new MemberService())->getDAO();
         $this->model("member");
     }

@@ -1,6 +1,6 @@
 <?php
-require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/models/orderDetail/OrderDetailDAO_Interface.php";
-require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/models/config.php";
+require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/models/orderDetail/OrderDetailDAO_Interface.php";
+require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/models/config.php";
 class OrderDetailDAO_PDO implements OrderDetailDAO
 {
 

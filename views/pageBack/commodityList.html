@@ -7,13 +7,13 @@
 	<title>Nectaria - Free HTML Template by WowThemes.net</title>
 	<meta name="description" content="Thoughts, reviews and ideas since 1999." />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" href="/PID_Assignment/views/img/logo.png">
-	<link rel="stylesheet" type="text/css" href="/PID_Assignment/views/css/screen.css" />
+	<link rel="icon" href="/PID_Assignment_Img_Complete/views/img/logo.png">
+	<link rel="stylesheet" type="text/css" href="/PID_Assignment_Img_Complete/views/css/screen.css" />
 	<link rel="stylesheet" type="text/css"
 		href="https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,700,700italic|Playfair+Display:400,700,400italic,700italic" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/PID_Assignment/views/css/list.css">
+	<link rel="stylesheet" href="/PID_Assignment_Img_Complete/views/css/list.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
@@ -25,7 +25,7 @@
 		crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<script type="module" src="/PID_Assignment/views/js/empTitle.js"></script>
+<script type="module" src="/PID_Assignment_Img_Complete/views/js/empTitle.js"></script>
 <script type="module">
 	import { Commodity } from "../js/models/commodity.js";
 	import { CommodityViewModel } from "../js/viewModels/commodityViewModel.js";
@@ -37,7 +37,7 @@
 		$("#list").empty();
 		$.ajax({
 			type: "GET",
-			url: "/PID_Assignment/commodity/getAll"
+			url: "/PID_Assignment_Img_Complete/commodity/getAll"
 		}).then(function (str) {
 			let objs = JSON.parse(str);
 			for (let item of objs) {
@@ -83,7 +83,7 @@
 			}
 			$.ajax({
 				type: "PUT",
-				url: "/PID_Assignment/commodity/update",
+				url: "/PID_Assignment_Img_Complete/commodity/update",
 				data: putData
 			}).then(() => {
 				updateMenu();
@@ -106,7 +106,7 @@
 
 			$.ajax({
 				type: "POST",
-				url: "/PID_Assignment/commodity/updateOneImg",
+				url: "/PID_Assignment_Img_Complete/commodity/updateOneImg",
 				data: postDate,
 				cache: false,
 				contentType: false,
@@ -124,7 +124,7 @@
 			let deleteData = { id: commodity.commodityID };
 			$.ajax({
 				type: "DELETE",
-				url: "/PID_Assignment/commodity/delete",
+				url: "/PID_Assignment_Img_Complete/commodity/delete",
 				data: deleteData
 			}).then(function (e) {
 				if (e) {
@@ -154,7 +154,7 @@
 			let postData = { commodity: JSON.stringify(item) };
 			$.ajax({
 				type: "POST",
-				url: "/PID_Assignment/commodity/insertByObj",
+				url: "/PID_Assignment_Img_Complete/commodity/insertByObj",
 				data: postData
 			}).then(function (e) {
 				if (e) {
@@ -174,8 +174,8 @@
 <body class="author-template">
 	<div class="site-wrapper">
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-			<a class="navbar-brand" href="/PID_Assignment/views/pageBack/commodityList.html">
-				<img src="/PID_Assignment/views/img/logo.png" alt="Fashion Critiques" />
+			<a class="navbar-brand" href="/PID_Assignment_Img_Complete/views/pageBack/commodityList.html">
+				<img src="/PID_Assignment_Img_Complete/views/img/logo.png" alt="Fashion Critiques" />
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
 				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -184,19 +184,19 @@
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="/PID_Assignment/views/pageBack/commodityList.html">首頁<span
+						<a class="nav-link" href="/PID_Assignment_Img_Complete/views/pageBack/commodityList.html">首頁<span
 								class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="/PID_Assignment/views/pageBack/commodityList.html">商品管理</a>
+						<a class="nav-link" href="/PID_Assignment_Img_Complete/views/pageBack/commodityList.html">商品管理</a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="/PID_Assignment/views/pageBack/memberList.html">會員管理</a>
+						<a class="nav-link" href="/PID_Assignment_Img_Complete/views/pageBack/memberList.html">會員管理</a>
 					</li>
 				</ul>
 				<span class="socialheader row">
 					<div class="col" id="empID">empID</div>
-					<a class="col" id="textLogin" href="/PID_Assignment/views/pageBack/login.html">登入</a>
+					<a class="col" id="textLogin" href="/PID_Assignment_Img_Complete/views/pageBack/login.html">登入</a>
 				</span>
 			</div>
 		</nav>

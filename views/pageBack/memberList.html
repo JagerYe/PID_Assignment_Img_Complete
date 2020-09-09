@@ -7,13 +7,13 @@
 	<title>Nectaria - Free HTML Template by WowThemes.net</title>
 	<meta name="description" content="Thoughts, reviews and ideas since 1999." />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" href="/PID_Assignment/views/img/logo.png">
-	<link rel="stylesheet" type="text/css" href="/PID_Assignment/views/css/screen.css" />
+	<link rel="icon" href="/PID_Assignment_Img_Complete/views/img/logo.png">
+	<link rel="stylesheet" type="text/css" href="/PID_Assignment_Img_Complete/views/css/screen.css" />
 	<link rel="stylesheet" type="text/css"
 		href="https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,700,700italic|Playfair+Display:400,700,400italic,700italic" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/PID_Assignment/views/css/list.css">
+	<link rel="stylesheet" href="/PID_Assignment_Img_Complete/views/css/list.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
@@ -38,7 +38,7 @@
 		display: none;
 	}
 </style>
-<script type="module" src="/PID_Assignment/views/js/empTitle.js"></script>
+<script type="module" src="/PID_Assignment_Img_Complete/views/js/empTitle.js"></script>
 <script type="module">
 	// $("body").css
 	import { Member } from "../js/models/member.js";
@@ -100,7 +100,7 @@
 		`);
 		$.ajax({
 			type: "GET",
-			url: "/PID_Assignment/order/getAll"
+			url: "/PID_Assignment_Img_Complete/order/getAll"
 		}).then(function (e) {
 			let objs = JSON.parse(e);
 			for (let item of objs) {
@@ -144,7 +144,7 @@
 		//此預計在另外做伺服請求
 		$.ajax({
 			type: "GET",
-			url: "/PID_Assignment/orderDetail/getAll"
+			url: "/PID_Assignment_Img_Complete/orderDetail/getAll"
 		}).then(function (e) {
 			let objs = JSON.parse(e);
 			for (let item of objs) {
@@ -176,7 +176,7 @@
 			}
 			$.ajax({
 				type: "PUT",
-				url: "/PID_Assignment/member/update",
+				url: "/PID_Assignment_Img_Complete/member/update",
 				data: data
 			}).then(function (e) {
 				if (!e) {
@@ -195,7 +195,7 @@
 	$(window).ready(() => {
 		$.ajax({
 			type: "GET",
-			url: "/PID_Assignment/member/getAll"
+			url: "/PID_Assignment_Img_Complete/member/getAll"
 		}).then(function (str) {
 			let objs = JSON.parse(str);
 			for (let item of objs) {
@@ -221,8 +221,8 @@
 <body class="author-template">
 	<div class="site-wrapper">
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-			<a class="navbar-brand" href="/PID_Assignment/views/pageBack/commodityList.html">
-				<img src="/PID_Assignment/views/img/logo.png" alt="Fashion Critiques" />
+			<a class="navbar-brand" href="/PID_Assignment_Img_Complete/views/pageBack/commodityList.html">
+				<img src="/PID_Assignment_Img_Complete/views/img/logo.png" alt="Fashion Critiques" />
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
 				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -231,19 +231,19 @@
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="/PID_Assignment/views/pageBack/commodityList.html">首頁<span
+						<a class="nav-link" href="/PID_Assignment_Img_Complete/views/pageBack/commodityList.html">首頁<span
 								class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="/PID_Assignment/views/pageBack/commodityList.html">商品管理</a>
+						<a class="nav-link" href="/PID_Assignment_Img_Complete/views/pageBack/commodityList.html">商品管理</a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="/PID_Assignment/views/pageBack/memberList.html">會員管理</a>
+						<a class="nav-link" href="/PID_Assignment_Img_Complete/views/pageBack/memberList.html">會員管理</a>
 					</li>
 				</ul>
 				<span class="socialheader row">
 					<div class="col" id="empID">empID</div>
-					<a class="col" id="textLogin" href="/PID_Assignment/views/pageBack/login.html">登入</a>
+					<a class="col" id="textLogin" href="/PID_Assignment_Img_Complete/views/pageBack/login.html">登入</a>
 				</span>
 			</div>
 		</nav>

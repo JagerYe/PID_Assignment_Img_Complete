@@ -1,6 +1,6 @@
 <?php
 
-require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/models/commodity/CommodityDAO_PDO.php";
+require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/models/commodity/CommodityDAO_PDO.php";
 class CommodityService
 {
     private $_dao;

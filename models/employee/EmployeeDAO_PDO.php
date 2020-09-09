@@ -1,6 +1,6 @@
 <?php
-require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/models/employee/EmployeeDAO_Interface.php";
-require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/models/config.php";
+require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/models/employee/EmployeeDAO_Interface.php";
+require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/models/config.php";
 class EmployeeDAO_PDO implements EmployeeDAO
 {
 

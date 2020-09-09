@@ -4,7 +4,7 @@ class CommodityController extends Controller
     private $_dao;
     public function __construct()
     {
-        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/models/commodity/CommodityService.php";
+        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/models/commodity/CommodityService.php";
         $this->_dao = (new CommodityService())->getDAO();
         $this->model("commodity");
     }

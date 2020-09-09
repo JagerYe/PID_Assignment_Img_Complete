@@ -1,6 +1,6 @@
 <?php
 
-require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/models/member/MemberDAO_PDO.php";
+require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/models/member/MemberDAO_PDO.php";
 class MemberService
 {
     private $_dao;

@@ -4,9 +4,9 @@ class OrderController extends Controller
     private $_dao;
     public function __construct()
     {
-        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/models/order/OrderService.php";
-        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/models/commodity/CommodityService.php";
-        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment/controllers/OrderDetailController.php";
+        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/models/order/OrderService.php";
+        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/models/commodity/CommodityService.php";
+        require_once "{$_SERVER['DOCUMENT_ROOT']}/PID_Assignment_Img_Complete/controllers/OrderDetailController.php";
         $this->_dao = (new OrderService())->getDAO();
         $this->model("order");
         $this->model("orderDetail");

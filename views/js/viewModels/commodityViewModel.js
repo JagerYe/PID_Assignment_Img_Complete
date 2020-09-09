@@ -5,9 +5,9 @@ export class CommodityViewModel {
 
     static getMenuView(id, name, price) {
         return `<div class="col-md-4">
-                    <a href="/PID_Assignment/views/pageFront/commodity.html?commodityID=${id}">
+                    <a href="/PID_Assignment_Img_Complete/views/pageFront/commodity.html?commodityID=${id}">
                         <div class="card mb-4 shadow-sm">
-                            <img src="/PID_Assignment/commodity/getOneImg?id=${id}"  onerror="this.onerror = null; this.src='/PID_Assignment/views/img/gravatar.jpg'">
+                            <img src="/PID_Assignment_Img_Complete/commodity/getOneImg?id=${id}"  onerror="this.onerror = null; this.src='/PID_Assignment_Img_Complete/views/img/gravatar.jpg'">
                             <div class="card-body">
                                 <h2>${name}</h2>
                                 <p class="card-text">價格：${price}</p>
@@ -19,7 +19,7 @@ export class CommodityViewModel {
 
     static getOneCommodityView(id, name, text, price, quantity) {
         return `
-            <img src="/PID_Assignment/commodity/getOneImg?id=${id}"  onerror="this.onerror = null; this.src='/PID_Assignment/views/img/gravatar.jpg'">
+            <img src="/PID_Assignment_Img_Complete/commodity/getOneImg?id=${id}"  onerror="this.onerror = null; this.src='/PID_Assignment_Img_Complete/views/img/gravatar.jpg'">
             <h1 class="author-title">${name}</h1>
             <h5>${text}</h5>
             <h2 class="author-bio">${price}</h2>
@@ -33,7 +33,7 @@ export class CommodityViewModel {
 
     static getShoppingCartView(name, price, commodityQuantity, buyQuantity, id) {
         return `<li class="row">
-                    <div class="col-3"><img src="/PID_Assignment/commodity/getOneImg?id=${id}" onerror="this.onerror = null; this.src='/PID_Assignment/views/img/gravatar.jpg'"></div>
+                    <div class="col-3"><img src="/PID_Assignment_Img_Complete/commodity/getOneImg?id=${id}" onerror="this.onerror = null; this.src='/PID_Assignment_Img_Complete/views/img/gravatar.jpg'"></div>
                     <div class="col-3">${name}</div>
                     <div class="col-3">${price}</div>
                     <div class="col-2">
@@ -61,7 +61,7 @@ export class CommodityViewModel {
             </div>
             <div class="row">
                 <div class="col-3">
-                    <img src="/PID_Assignment/commodity/getOneImg?id=${id}"  onerror="this.onerror = null; this.src='/PID_Assignment/views/img/gravatar.jpg'"><br>
+                    <img src="/PID_Assignment_Img_Complete/commodity/getOneImg?id=${id}"  onerror="this.onerror = null; this.src='/PID_Assignment_Img_Complete/views/img/gravatar.jpg'"><br>
                 </div>
                 <div class="col-3"><input id="commodityName${id}" name="commodityName${id}" type="text"
                 value="${name}"></div>
